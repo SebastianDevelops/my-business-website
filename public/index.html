@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.0/css/froala_blocks.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <div class="bg-img view jarallax">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand text-white" href="/">WWS</a>
+            <a class="navbar-brand text-white" href="#">WWS</a>
             <button class="navbar-toggler ms-auto color-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,22 +25,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav text-white">
                 <li class="nav-item active">
-                  <a class="nav-link text-white" href="/">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Services</a>
+                  <a class="nav-link text-white top" id="service" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Projects</a>
+                  <a class="nav-link text-white" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Pricing</a>
+                  <a class="nav-link text-white" id="price" href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">About</a>
+                  <a class="about nav-link text-white" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Contact</a>
+                  <a class="nav-link text-white" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -58,7 +57,7 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h1 style="font-weight: bold;">What Sets Us Apart?</h1>
+          <h1 id="about" style="font-weight: bold;">What Sets Us Apart?</h1>
         </div>
       </div>
   
@@ -96,13 +95,14 @@
     </div>
   </section>
 
+  
 <!-- Services -->
 
   <section class="fdb-block">
     <div class="container">
       <div class="row justify-content-center align-items-center pb-xl-5">
         <div class="col-8 col-sm-8 text-center services">
-          <h1 style="font-weight: bold;">What Are Our Services</h1>
+          <h1 id="services" style="font-weight: bold;">What Are Our Services</h1>
           <hr class="services-line">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_B2qAl3/data.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px; margin-right: 45px"  loop  autoplay></lottie-player>
@@ -124,7 +124,6 @@
   
         <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
           <div class="fdb-box fdb-touch">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_1elvfrxr.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin-left: 15px"  loop  autoplay></lottie-player>
             <h2 style="font-weight: bold;">Web Development</h2>
             <hr>
@@ -153,7 +152,6 @@
     
           <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
             <div class="fdb-box fdb-touch">
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
               <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_1oarzzmy.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin-left: 10px; margin-bottom: -10px;"  loop  autoplay></lottie-player>
               <h2 style="font-weight: bold;">Progressive Web-App</h2>
               <hr>
@@ -211,7 +209,7 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
-          <h1>A Few Projects</h1>
+          <h1 id="projects">A Few Projects</h1>
           <hr>
         </div>
       </div>
@@ -248,7 +246,7 @@
     <div class="container">
       <div class="row text-center">
         <div class="col">
-          <h1 style="font-weight: bold;">Pricing</h1>
+          <h1 id="pricing" class="bottom" style="font-weight: bold;">Pricing</h1>
           <hr>
         </div>
       </div>
@@ -784,7 +782,6 @@
   
       <div class="row text-center align-items-center-lg align-items-center pt-5">
         <div class="col-7 col-sm-4 m-auto mb-md-0 mt-md-0 m-lg-auto">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_hi95bvmx/WebdesignBg.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin-right: 10px"  loop  autoplay></lottie-player>
         </div>
   
@@ -812,7 +809,7 @@
         <div class="row-100"></div>
         <div class="row text-center">
           <div class="col-8 text-center align-items-center justify-content-center">
-            <h1>Contact Us For a Quote</h1>
+            <h1 id="contact">Contact Us For a Quote</h1>
             <p class="lead">Yes? Yes You Want To Get Your Website Done By a Professional Agency?</p>
           </div>
         </div>
@@ -915,8 +912,7 @@
       </div>
     </div>
   </section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>
