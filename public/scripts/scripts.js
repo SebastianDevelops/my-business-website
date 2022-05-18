@@ -5,4 +5,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
       scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
 });
+
+$('.a1, .a2, .a3').fuwatto({
+  duration: 2000,
+})
+  
+
+
   
